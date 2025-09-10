@@ -10,8 +10,9 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
-app.use(express.json());
+app.use(cors({
+  origin: "https://finanzas-project-frontend.vercel.app/"
+}));
 
 // Rutas de ejemplo
 app.get('/', (req, res) => {
