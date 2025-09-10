@@ -11,7 +11,7 @@ connectDB();
 
 const app = express();
 app.use(cors({
-  origin: "https://finanzas-project-frontend.vercel.app/"
+  origin: "https://finanzas-project-frontend.vercel.app"
 }));
 
 // Rutas de ejemplo
