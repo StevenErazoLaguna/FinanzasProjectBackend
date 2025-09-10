@@ -23,8 +23,8 @@ app.get('/', (req, res) => {
 });
 
 // Importar rutas de finanzas
-import * as finanzasRoutes from './routes/finanzasRoutes';
-app.use('/api/finanzas', finanzasRoutes.default);
+import finanzasRoutes from './routes/finanzasRoutes';
+app.use('/api/finanzas', finanzasRoutes);
 
 // Puerto
 const PORT = process.env.PORT || 5000;
